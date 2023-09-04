@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url("fonts.css");
+
+/* 공통 */
+body {font-size:14px; color:#101010; font-family:"Noto Sans CJK KR", sans-serif; font-weight:400;}
+body, html {height:100%;}
+input {font-family:"Noto Sans CJK KR", sans-serif; font-weight:400; outline:0; background:#fff; border:1px solid #ccc; width:calc(100% - 34px); height:40px; line-height:40px; padding:0 16px; font-size:14px; color:#101010;}
+input::input-placeholder {font-family:"Noto Sans CJK KR", sans-serif; color:#999; font-size:14px; font-weight:400;}
+input::-webkit-input-placeholder {font-family:"Noto Sans CJK KR", sans-serif; color:#999; font-size:14px; font-weight:400;}
+input[type="file"] {color:#666; font-size:16px; width:100%; border:none; line-height:normal; height:auto; background:none; padding:0;}
+textarea {font-family:"Noto Sans CJK KR", sans-serif; font-weight:400; font-size:14px; color:#101010; border:1px solid #ccc; resize:none; width:100%;}
+button {outline:0; border:0 none;}
+select {font-family:"Noto Sans CJK KR", sans-serif;}
+div[contenteditable=true] {outline:none; border:0 none;}
+a {outline:none; select-dummy:expression(this.hideFocus=true); -webkit-tap-highlight-color: rgba(0,0,0,0);  -webkit-tap-highlight-color: transparent;}
+em {font-style:normal;}
+*:focus {outline:none;}
+.txtHide {font-size:0; line-height:0; overflow:hidden; text-indent:-9999px;}
+
+#wrap {width:100%; margin:0 auto; max-width:420px;}
+.section {text-align:center;}
+
+/* visual */
+.visualWrap {position:relative; height:570px; background:url('../images/bg_visual.png') no-repeat center / cover;}
+.visualWrap:before {content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.5);}
+.visualTxt {position:relative; padding:167px 23px 59px;}
+.visualTxt > span {display:block; font-size:21px; color:#fff; line-height:31px; font-weight:700;}
+.visualTxt strong {display:block; font-size:27px; color:#fff; line-height:40px; font-weight:900; margin:14px 0 37px;}
+.visualTxt strong em {display:inline-block; width:100px; color:#FDE500;}
+.startLink {display:block; width:226px; height:71px; text-align:center; line-height:71px; background:url('../images/bg_link01.png') no-repeat center / contain; font-size:21px; color:#fff;
+font-weight:700; margin:0 auto;}
+
+/* section */
+.section img {max-width:100%;}
+.secTit h3 {font-size:23px; color:#000; line-height:34px; font-weight:900;}
+.secTit h3 span {color:#00AFFE;}
+.secTit p {font-size:14px; color:#000; line-height:21px; font-weight:400; margin-top:18px;}
+.section1 {padding:53px 20px 55px;}
+.section1 .img {height:160px; background:url('../images/bg_sec01_img.png') no-repeat center / contain; margin-top:58px;}
+.section2 {background:#F5F5F5; padding:53px 20px 53px;}
+.section2 .img {position:relative; margin:114px 0 44px; height:167px; background:url('../images/bg_sec02_img.png') no-repeat center / contain;}
+.section2 .imgTxt {position:absolute; top:-88px; lefT:0; right:0; margin:0 auto; font-size:11px; color:#fff; line-height:16px; font-weight:500; text-shadow:0px 3.2px 3.2px rgba(0, 0, 0, 0.25);
+background:url('../images/bg_sec02_txt.png') no-repeat center / cover; width:179px; text-align:left; padding:10px 18px 20px;}
+.section2 .goodTxt {font-size:14px; color:#000; line-height:21px; font-weight:400;}
+.section2 .goodTxt span {display:block; font-weight:700;}
+.section3 {padding:51px 2px 46px 13px;}
+.sec3List {margin-top:40px;}
+.sec3List li {background:#fff; border-radius:15px; height:296px; width:59.42%;}
+.sec3List .line {border:1px solid #ccc; border-radius:15px; padding:9px 0 11px; height:calc(100% - 22px);}
+.sec3List .line img {margin-bottom:8px;}
+.sec3List .line img.img1 {height:170px;}
+.sec3List .line img.img2 {height:162px;}
+.sec3List .line img.img3 {height:160px;}
+.sec3List .line dt {font-size:14px; color:#000; line-height:21px; font-weight:900; margin-bottom:11px;}
+.sec3List .line dt.type02 {margin-bottom:1px;}
+.sec3List .line dt.type03 {margin-bottom:15px;}
+.sec3List .line dd {font-size:10px; color:#000; line-height:14px; font-weight:400;}
+.section4 {background:#F5F5F5; padding:53px 2px 62px 17px;}
+.sec4List {margin-top:27px;}
+.sec4List li {background:#fff; border-radius:11px;}
+.sec4List .line {border:1px solid #ccc; border-radius:11px; padding:10px 0 9px;}
+.sec4List .line img {margin-bottom:1px;}
+.sec4List .line dt {font-size:13px; color:#00AFFE; line-height:19px; font-weight:700; margin-bottom:5px;}
+.sec4List .line dd {font-size:14px; color:#000; line-height:21px; font-weight:400;}
+.section5 {background:#F2FBFF; padding:53px 20px 60px;}
+.sec5List {display:flex; justify-content:space-between; flex-wrap:wrap; margin-top:30px;}
+.sec5List li {border:1px solid #ccc; border-radius:11px; padding:98px 0 22px; background:#fff url('../images/bg_sec05_img01.png') no-repeat top 30px center; width:47.813%; margin-top:9px;}
+.sec5List li:nth-child(-n+2) {margin-top:0;}
+.sec5List li:nth-child(2) {background:#fff url('../images/bg_sec05_img02.png') no-repeat top 28px center;}
+.sec5List li:nth-child(3) {background:#fff url('../images/bg_sec05_img03.png') no-repeat top 28px center;}
+.sec5List li:nth-child(4) {background:#fff url('../images/bg_sec05_img04.png') no-repeat top 22px center;}
+.sec5List dt {font-size:13px; color:#000; line-height:19px; font-weight:900;}
+.sec5List dd {font-size:10px; color:#000; line-height:14px; font-weight:400; margin-top:9px;}
+.section6 {padding:52px 28px 60px;}
+.section6 .startLink {background:url('../images/bg_link02.png') no-repeat center / contain; width:248px; height:66px; line-height:66px; font-size:23px; color:#00AFFE; margin:15px auto 18px;}
+.sohoShopTxt {padding-left:64px; height:143px; background:url('../images/bg_sec06_img01.png') no-repeat top -14px left / 100% 235px;}
+.section7 {background:#F5F5F5; padding:53px 23px 60px;}
+.section7 .secTit {margin-bottom:55px;}
+.section8 {position:relative; padding:54px 0 72px; background:#121B3C url('../images/bg_sec08_img01.png') no-repeat top left;}
+.section8:before {content:''; position:absolute; bottom:0; right:0; width:111px; height:94px; background:url('../images/bg_sec08_img02.png') no-repeat center;}
+.sec8Con {position:relative;}
+.sec8Con > span {display:block; font-size:18px; color:#fff; line-height:27px; font-weight:400;}
+.sec8Con strong {display:block; font-size:25px; color:#fff; line-height:37px; font-weight:400; margin:26px 0 44px;}
+.sec8Con strong em {font-weight:900;}
+
+/* 23.04.04 이현진 추가 */
+.section3 {padding-right:13px;}
+.section4 {padding-right:17px;}
+.sec5List li {margin-top:10px;}
+.swiper-pagination.listPagination {position:static; font-size:0; margin-top:15px;}
+.swiper-pagination.listPagination .swiper-pagination-bullet {width:10px; height:10px; margin:0 5px; opacity:1; background:#F5F5F5;}
+.swiper-pagination.listPagination.sec4Pagination .swiper-pagination-bullet {background:#fff;}
+.swiper-pagination.listPagination .swiper-pagination-bullet-active, .swiper-pagination.listPagination.sec4Pagination .swiper-pagination-bullet-active {background:#00AFFE;}
